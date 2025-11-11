@@ -18,7 +18,7 @@ header{
   align-items: center;
   gap: 12px;
   transition: padding .3s ease, gap .3s ease, background-color .3s ease;
-  background: url('/img/realistic_animated_waves.gif') no-repeat center center;
+  background: url('../img/realistic_animated_waves.gif') no-repeat center center;
 }
 
 nav {
