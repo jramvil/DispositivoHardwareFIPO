@@ -12,13 +12,13 @@ body {
 }
 
 header{
-  background-color: #111;
   padding: 20px 40px;
   display: grid;
   grid-template-rows: auto auto;
   align-items: center;
   gap: 12px;
   transition: padding .3s ease, gap .3s ease, background-color .3s ease;
+  background: url('/img/realistic_animated_waves.gif') no-repeat center center;
 }
 
 nav {
@@ -61,6 +61,7 @@ main {
 main p {
   text-align: justify;
 }
+
 main h3 {
   color: #00e6ff;
   margin-top: 25px;
@@ -76,6 +77,10 @@ main ul {
   padding-left: 10px;   
 }
 
+#referencias ul {
+  color: #ffffff;
+}
+
 section {
   margin-bottom: 60px;
 }
@@ -84,20 +89,21 @@ h1, h2, h3 {
   font-family: 'Orbitron', sans-serif; 
   text-transform: uppercase;
   text-align: center;
+  -webkit-text-stroke: 1px #ffff;
 }
 
-h1 {
+header h1 {
   font-size: 2.8rem;
   margin-bottom: 20px;
   text-align: center;
+  -webkit-text-stroke: 2px #ffff;
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 15px;
   padding-bottom: 8px;
-  border-bottom: 2px solid #00e6ff; /* ← línea restaurada */
-
+  border-bottom: 2px solid #00e6ff;
 }
 
 img {
@@ -116,18 +122,6 @@ footer {
   padding: 30px 40px;
   text-align: center;
   color: #777;
-}
-
-footer a {
-  color: #00e6ff;
-  margin: 0 10px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-footer a:hover {
-  color: #fff;
 }
 
 .social-icons {
@@ -153,7 +147,7 @@ footer a:hover {
 }
 
 html {
-  scroll-padding-top: 80px;
+  scroll-padding-top: 67px;
 }
 
 .caracteristicas-contenido {
@@ -178,6 +172,18 @@ html {
   height: auto;
   border-radius: 10px;
   border: 1px solid rgba(0, 230, 255, 0.25);
-  box-shadow: 0 0 16px rgba(0, 230, 255, 0.15);
+  box-shadow: 0 0 16px rgba(31, 220, 237, 0.15);
   object-fit: contain;
 }
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00e6ff;
+  text-shadow: 0 0 8px #00e6ff;
+}
+
