@@ -27,7 +27,7 @@ nav {
   z-index: 1000;
   background-color: #111;
   padding: 10px 0;
-  box-shadow: 0 2px 8px rgba(0, 230, 255, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 230, 255, 1), 0 -2px 8px rgba(0, 230, 255, 1);
   margin-bottom: 20px;
 }
 
@@ -53,14 +53,27 @@ nav ul li a:focus {
   border-radius: 4px;
 }
 
-
 main {
-  max-width: 1000px;
+  max-width: 80%;
   margin: auto;
 }
 
 main p {
   text-align: justify;
+}
+main h3 {
+  color: #00e6ff;
+  margin-top: 25px;
+  font-size: 1.4rem;
+  border-left: 4px solid #00e6ff;
+  padding-left: 10px;
+  text-align: left;
+}
+
+main ul {
+  list-style-position: inside; 
+  margin-left: 10px;           
+  padding-left: 10px;   
 }
 
 section {
@@ -82,8 +95,9 @@ h1 {
 h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  border-bottom: 2px solid #00e6ff;
   padding-bottom: 8px;
+  border-bottom: 2px solid #00e6ff; /* ← línea restaurada */
+
 }
 
 img {
@@ -140,4 +154,30 @@ footer a:hover {
 
 html {
   scroll-padding-top: 80px;
+}
+
+.caracteristicas-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.caracteristicas-texto {
+  flex: 2; 
+}
+
+.caracteristicas-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.caracteristicas-imagen img {
+  width: 400px; 
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 230, 255, 0.25);
+  box-shadow: 0 0 16px rgba(0, 230, 255, 0.15);
+  object-fit: contain;
 }
