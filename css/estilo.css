@@ -24,11 +24,12 @@ header{
 nav {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 2000;
   background-color: #111;
   padding: 10px 0;
   box-shadow: 0 2px 8px rgba(0, 230, 255, 1), 0 -2px 8px rgba(0, 230, 255, 1);
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 nav ul {
@@ -36,6 +37,7 @@ nav ul {
   display: flex;
   gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -107,14 +109,14 @@ h2 {
 }
 
 img {
-  display: block;
+   display: block;
   margin: 20px auto;
-  width: 600px;           
-  height: auto;           
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   border-radius: 10px;
   border: 1px solid rgba(0,230,255,0.25);
   box-shadow: 0 0 16px rgba(0,230,255,0.15);
-  object-fit: contain;    
 }
 
 footer {
@@ -158,23 +160,25 @@ html {
 }
 
 .caracteristicas-texto {
-  flex: 2; 
+  flex: 2 1 420px;
 }
 
 .caracteristicas-imagen {
-  flex: 1;
+  flex: 1 1 270px;
   display: flex;
   justify-content: flex-end;
 }
 
 .caracteristicas-imagen img {
-  width: 400px; 
+  width: 100%;          
+  max-width: 480px;
   height: auto;
   border-radius: 10px;
   border: 1px solid rgba(0, 230, 255, 0.25);
   box-shadow: 0 0 16px rgba(31, 220, 237, 0.15);
   object-fit: contain;
 }
+
 
 a {
   color: #ffffff;
